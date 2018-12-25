@@ -34,11 +34,11 @@ gulp.task('styles', function() {
 
 gulp.task('images', function() {
   return gulp.src('frontend/assets/img/*.{png,jpg,svg}')
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true}),
-    imagemin.svgo()
-    ]))
+  // .pipe(imagemin([
+  //   imagemin.optipng({optimizationLevel: 3}),
+  //   imagemin.jpegtran({progressive: true}),
+  //   imagemin.svgo()
+  //   ]))
   .pipe(gulp.dest('frontend/assets/img'));
 })
 

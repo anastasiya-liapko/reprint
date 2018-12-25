@@ -1,0 +1,40 @@
+.search-form
+  display: flex
+  background-color: #949494
+
+.search-form__input
+  width: 100%
+  padding: 9px
+  font-family: $font-roboto
+  font-size: 20px
+  font-weight: $regular
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+  color: #272727
+  background-color: #949494
+  border: none
+  &::placeholder
+    font-family: $font-roboto
+    font-size: 20px
+    font-weight: $regular
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #272727
+
+@media(min-width: 1200px)
+  
+  .search-form__input
+    width: 450px
+
+@media(min-width: 992px)
+
+  .search-form
+    margin-left: 40px
+    margin-right: 40px
+

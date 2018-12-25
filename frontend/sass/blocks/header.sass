@@ -1,0 +1,36 @@
+.header
+  color: #ffffff
+  background-color: #333333
+
+.header_page
+  .header__title
+    display: none
+  .header__search
+    width: 100%
+
+.header__menu,
+.header__search,
+.header__basket
+  width: 50%
+
+@media(min-width: 992px)
+
+  .header_page
+    .header__menu
+      margin-left: 40px
+
+@media(min-width: 768px)
+
+  .header__menu,
+  .header__search,
+  .header__basket
+    width: auto
+
+@media(min-width: 576px)
+
+  .header_page
+    .header__menu,
+    .header__basket
+      width: auto
+      flex-grow: 0 !important      
+
