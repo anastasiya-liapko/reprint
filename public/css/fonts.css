@@ -26,6 +26,7 @@
 
 .icon-del:before {
   content: "\e900";
+  font-size: 29px;
 }
 .icon-delivery:before {
   content: "\e901";
