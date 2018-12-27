@@ -2,7 +2,7 @@
 $(function () {
 
   // при отправке формы messageForm на сервер (id="messageForm")
-  $('#messageForm').submit(function (event) {
+  $('#orderForm').submit(function (event) {
     
     // заведём переменную, которая будет говорить о том валидная форма или нет
     var formValid = true;
@@ -30,13 +30,16 @@ $(function () {
       $(this).find('textarea').each(function() {
         data[$(this)[0].name] = $(this).val();
       })
+      $(this).find('select').each(function() {
+        data[$(this)[0].name] = $(this).val();
+      })
 
       // технология AJAX
       $.ajax({
         //метод передачи запроса - POST
         type: "POST",
         //URL-адрес запроса
-        url: "contacts.php",
+        url: "form.php",
         //передаваемые данные - formData
         data: data
         })

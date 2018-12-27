@@ -20,14 +20,14 @@
     <header class="header header_page">
       <div class="container d-flex flex-wrap flex-lg-nowrap justify-content-sm-between align-items-center p-0 p-lg-3">
         <div class="header__logo logo order-1 flex-grow-0 flex-shrink-0 p-3 p-lg-0">
-          <a href="#">
+          <a href="/index.html">
             <img src="img/logo.png" alt="">
           </a>
         </div>
         <!-- logo -->
 
         <div class="header__menu menu order-6 order-sm-2 order-lg-2 flex-grow-1 flex-sm-grow-0 text-center p-3 p-lg-0">
-          <a class="link link_dark" href="#">КАТАЛОГ</a>
+          <a class="link link_dark" href="/razdel.html">КАТАЛОГ</a>
         </div>
         <!-- menu -->
 
@@ -39,7 +39,7 @@
         <!-- title -->
 
         <div class="header__search search order-5 flex-grow-1 flex-sm-grow-0 text-center p-3 p-lg-0">
-          <form class="search-form">
+          <form class="search-form" action="/search.html">
             <input type="text" class="search-form__input flex-grow-1" placeholder="Поиск товаров в каталоге">
             <button type="submit" class="link link_dark button button_border">ПОИСК</button>
           </form>
@@ -47,7 +47,7 @@
         </div>
         <!-- search -->
 
-        <div class="header__basket basket d-flex justify-content-end align-items-center order-2 order-md-4 order-lg-5 flex-grow-1 flex-md-grow-0 p-3 p-lg-0">
+        <a class="header__basket basket d-flex justify-content-end align-items-center order-2 order-md-4 order-lg-5 flex-grow-1 flex-md-grow-0 p-3 p-lg-0">
           <div class="basket__image mr-2 mr-lg-4">
             <img src="img/buy.png" alt="">
           </div>
@@ -55,7 +55,7 @@
             <span class="bascet__quantity">3 экз.</span>
             <span class="basket__sum">1 150 руб.</span>
           </div>
-        </div>
+        </a>
         <!-- basket -->
       </div>
     </header>
@@ -84,11 +84,11 @@
 
                   <span class="order__item-multiplication sign sign__multiplication mt-3 mt-lg-0 mb-3 mb-lg-0 ml-4 mr-4 order-4 order-md-3">x</span>
 
-                  <input type="text" class="input order-5 order-md-4 mt-3 mt-lg-0 mb-3 mb-lg-0" id="order__item-quantity" placeholder="2">
+                  <input type="text" id="item1-quantity" name="item1-quantity" class="input order-5 order-md-4 mt-3 mt-lg-0 mb-3 mb-lg-0" id="order__item-quantity" placeholder="2">
 
                   <div class="select select__paper order-6 order-md-5 d-flex mb-3 mb-lg-0">
                     <span class="order__item-addition sign sign__addition ml-2 mr-2">+</span>
-                    <select name="paper" id="paper">
+                    <select name="item1-paper" id="item1-paper">
                       <option class="text-center" value="Глянцевая">Глянцевая</option>
                       <option class="text-center" value="Матовая">Матовая</option>
                     </select>
@@ -96,7 +96,7 @@
 
                   <div class="select select__cover order-7 order-md-6 d-flex mb-3 mb-lg-0">
                     <span class="order__item-addition sign sign__addition ml-2 mr-2">+</span>
-                    <select name="cover" id="cover">
+                    <select name="item1-cover" id="item1-cover">
                       <option class="text-center" value="Твердый">Твердый</option>
                       <option class="text-center" value="Мягкий">Мягкий</option>
                     </select>
@@ -104,7 +104,7 @@
 
                   <div class="select select__format order-8 order-md-7 d-flex mb-3 mb-lg-0">
                     <span class="order__item-addition sign sign__addition ml-2 mr-2">+</span>
-                    <select name="format" id="format">
+                    <select name="item1-format" id="item1-format">
                       <option class="text-center" value="А5">А5</option>
                       <option class="text-center" value="А4">А4</option>
                     </select>
@@ -140,11 +140,11 @@
 
                   <span class="order__item-multiplication sign sign__multiplication mt-3 mt-lg-0 mb-3 mb-lg-0 ml-4 mr-4 order-4 order-md-3">x</span>
 
-                  <input type="text" class="input order-5 order-md-4 mt-3 mt-lg-0 mb-3 mb-lg-0" id="order__item-quantity" placeholder="2">
+                  <input type="text" id="item2-quantity" name="item2-quantity" class="input order-5 order-md-4 mt-3 mt-lg-0 mb-3 mb-lg-0" id="order__item-quantity" placeholder="2">
 
                   <div class="select select__paper order-6 order-md-5 d-flex mb-3 mb-lg-0">
                     <span class="order__item-addition sign sign__addition ml-2 mr-2">+</span>
-                    <select name="paper" id="paper">
+                    <select name="item2-paper" id="item2-paper">
                       <option class="text-center" value="Глянцевая">Глянцевая</option>
                       <option class="text-center" value="Матовая">Матовая</option>
                     </select>
@@ -152,7 +152,7 @@
 
                   <div class="select select__cover order-7 order-md-6 d-flex mb-3 mb-lg-0">
                     <span class="order__item-addition sign sign__addition ml-2 mr-2">+</span>
-                    <select name="cover" id="cover">
+                    <select name="item2-cover" id="item2-cover">
                       <option class="text-center" value="Твердый">Твердый</option>
                       <option class="text-center" value="Мягкий">Мягкий</option>
                     </select>
@@ -160,7 +160,7 @@
 
                   <div class="select select__format order-8 order-md-7 d-flex mb-3 mb-lg-0">
                     <span class="order__item-addition sign sign__addition ml-2 mr-2">+</span>
-                    <select name="format" id="format">
+                    <select name="item2-format" id="item2-format">
                       <option class="text-center" value="А5">А5</option>
                       <option class="text-center" value="А4">А4</option>
                     </select>
@@ -215,7 +215,7 @@
                 </div>
               </div>
              
-              <div class="order__delivery-descr info-text d-flex align-items-center">
+              <div class="order__delivery-descr info-text d-flex align-items-end">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
               </div>
 
@@ -241,7 +241,7 @@
 
               <div class="order__comment">
                 <label class="label d-block" for="comment">Комментарий</label>
-                <input type="text" class="input" id="comment" name="comment">
+                <textarea type="text" class="input input_textarea" id="comment" name="comment" rows="3"></textarea>
               </div>
             </div>
             <!-- order__contacts -->
@@ -271,10 +271,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__menu menu d-flex flex-column flex-md-row justify-content-between align-items-center pt-3 pb-3 pt-md-5 pb-md-5">
-          <a class="link link_dark" href="#">КАТАЛОГ</a>
+          <a class="link link_dark" href="/razdel.html">КАТАЛОГ</a>
           <a class="link link_dark" href="#">КАК СДЕЛАТЬ ЗАКАЗ</a>
-          <a class="link link_dark" href="#">ОПЛАТА И ДОСТАВКА</a>
-          <a class="link link_dark" href="#">КОНТАКТЫ</a>
+          <a class="link link_dark" href="/services.html">ОПЛАТА И ДОСТАВКА</a>
+          <a class="link link_dark" href="/contacts.html">КОНТАКТЫ</a>
         </div>
       </div>
 
@@ -290,6 +290,6 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.maskedinput.js"></script>
   <script src="js/mask.js"></script>
-  <script src="js/message-form.js"></script>
+  <script src="js/order-form.js"></script>
   </body>
 </html>

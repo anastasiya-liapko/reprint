@@ -7,17 +7,31 @@
     display: none
   .header__search
     width: 100%
+    
+// .header_index.open
+//   .header__search
+//     width: 100%
 
 .header__menu,
 .header__search,
 .header__basket
   width: 50%
 
-@media(min-width: 992px)
+@media(min-width: 576px)
 
   .header_page
-    .header__menu
-      margin-left: 40px
+    .header__menu,
+    .header__basket
+      width: auto
+      flex-grow: 0 !important 
+
+  // .header_index.open
+  //   .header__menu,
+  //   .header__basket
+  //     width: auto
+  //     flex-grow: 0 !important 
+  //   .header__basket
+  //     order: 3 !important
 
 @media(min-width: 768px)
 
@@ -26,11 +40,14 @@
   .header__basket
     width: auto
 
-@media(min-width: 576px)
+@media(min-width: 992px)
 
   .header_page
-    .header__menu,
-    .header__basket
-      width: auto
-      flex-grow: 0 !important      
+    .header__menu
+      margin-left: 40px
 
+  // .header_index.open
+  //   .header__menu
+  //     margin-left: 40px
+  //   .header__basket
+  //     order: 6 !important

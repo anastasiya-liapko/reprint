@@ -36,7 +36,7 @@ $(function () {
         //метод передачи запроса - POST
         type: "POST",
         //URL-адрес запроса
-        url: "contacts.php",
+        url: "form.php",
         //передаваемые данные - formData
         data: data
         })
