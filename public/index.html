@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/fonts.css">
 
@@ -39,11 +40,12 @@
         <!-- title -->
 
         <div class="header__search search order-4 order-md-3 order-lg-4 flex-grow-1 flex-sm-grow-0 text-center p-3 p-lg-0">
-          <form class="search-form d-none">
+          <form action="/search.html" class="search-form search-form_index d-none position-relative">
             <input type="text" class="search-form__input flex-grow-1" placeholder="Поиск товаров в каталоге">
             <button type="submit" class="link link_dark button button_border">ПОИСК</button>
+            <span class="search-form__close position-absolute">x</span>
           </form>
-          <button type="submit" class="link link_dark button">ПОИСК</button>
+          <button type="submit" class="search-form__open link link_dark button">ПОИСК</button>
         </div>
         <!-- search -->
 
@@ -98,5 +100,6 @@
   <script src="js/pagination.js"></script>
   <script src="js/sort.js"></script>
   <script src="js/book-form.js"></script>
+  <script src="js/open-search-form.js"></script>
   </body>
 </html>
